@@ -22,6 +22,8 @@ Spring Boot with:
 * Controller Layer 
 * Service Layer
 * Repository Layer
+* Model Layer
+* Configuration Layer
 
 
 # Database
