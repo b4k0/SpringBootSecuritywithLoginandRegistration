@@ -5,6 +5,8 @@ import com.springboot.demo.model.User;
 import com.springboot.demo.repository.UserRepository;
 import com.springboot.demo.web.dto.UserRegistrationDto;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
@@ -27,5 +29,10 @@ public class UserServiceImpl implements  UserService{
 
 
       return userRepository.save(user);
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
+        return null;
     }
 }
